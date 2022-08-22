@@ -23,6 +23,7 @@ html {
     justify-content: center;
     height: fit-content;
 }
+
 .side-nav {
     grid-area: side-nav;
     padding-top: 75px;
@@ -82,11 +83,14 @@ html {
 }
 .contact {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     padding-top: 5em;
 }
 .contact img {
     max-height: 10em;
+}
+#selfImage {
+    border-radius: 100px;
 }
 .side-nav a:hover {
     color:blue;
@@ -95,4 +99,14 @@ html {
 .side-nav a {
     color: black;
     text-decoration: none;
+}
+.proj img {
+    width: 2em;
+}
+
+.bottomNav a {
+    color: black;
+}
+.bottomNav a:hover {
+    color: blue;
 }
