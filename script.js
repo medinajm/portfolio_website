@@ -34,12 +34,20 @@ const msgCont = {
     walk: [["kindness is always the best option"], ["tomorrow is never promised"], ["life is a gift"], ["love is life's greatest gifts"], ["life is about experiences"]],
     remember: [["are awesome"], ["are great"], ["can do anything"], ["can choose to be better"], ["are never too old to learn and grow"]],
 }
+let today = (`Today is the day that you'll ${msgCont.today[randNum]}`);
+let walk = (`Take a walk and remind yourself that ${msgCont.walk[randNum]}`);
+let remember = (`Always remember that you ${msgCont.remember[randNum]}`);
 
 const msgOut = () => {
-    let today = (`Today is the day that you'll ${msgCont.today[randNum]}`);
-    let walk = (`Take a walk and remind yourself that ${msgCont.walk[randNum]}`);
-    let remember = (`Always remember that you ${msgCont.remember[randNum]}`);
     document.getElementById('demo1').innerHTML = today;
     document.getElementById('demo2').innerHTML = walk;
     document.getElementById('demo3').innerHTML = remember;
+    document.getElementById('resetButton').hidden = false;
+}
+
+const resetMsg = () => {
+    document.getElementById('resetButton').hidden = true
+    document.getElementById('demo1').innerHTML = ''
+    document.getElementById('demo2').innerHTML = ''
+    document.getElementById('demo3').innerHTML = ''
 }
