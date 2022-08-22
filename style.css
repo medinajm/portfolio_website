@@ -47,9 +47,7 @@ html {
     grid-area: intro;
     line-height: 1.3;
 }
-#resetButton {
-   display: none;
-}
+
 /* media query for mobile screens */
 @media only screen and (max-width: 450px) {
     .container {
